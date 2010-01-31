@@ -45,7 +45,7 @@ map <leader>f :FuzzyFinderFile<CR>
 map <leader>p :FuzzyFinderDir<CR>
 map <leader>b :FuzzyFinderBuffer<CR>
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
-map <leader>c :NERDComToggleComment<CR>
+map <leader>c <plug>NERDCommenterToggle 
 
 map <silent> <C-F10> :set spell!<CR>
 
