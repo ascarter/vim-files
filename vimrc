@@ -40,14 +40,21 @@ set foldlevel=10
 
 " Mappings
 let mapleader = "\\"
-map <leader>t :FuzzyFinderTag<CR>
-map <leader>f :FuzzyFinderFile<CR>
-map <leader>p :FuzzyFinderDir<CR>
-map <leader>b :FuzzyFinderBuffer<CR>
+map <leader>t :FufTag<CR>
+map <leader>f :FufFile<CR>
+map <leader>p :FufDir<CR>
+map <leader>b :FufBuffer<CR>
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 map <leader>c <plug>NERDCommenterToggle 
 
-map <silent> <C-F10> :set spell!<CR>
+" Map Function key shortcuts
+map <silent> <F3> :FufTag<CR>
+map <silent> <S-F3> :FufFile<CR>
+map <silent> <M-F3> :FufBuffer<CR>
+""map <silent> <F5> :RunMake?
+
+map <silent> <C-F7> :set spell!<CR>
+map <silent> <C-F10> :execute 'NERDTreeToggle ' . getcwd()<CR>
 
 runtime ftplugin/man.vim
 
