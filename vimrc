@@ -33,9 +33,6 @@ set foldenable
 set foldmethod=syntax
 set foldlevel=10
 
-" snippetsEmu key
-"let g:snippetsEmu_key = "<S-Tab>"
-
 " Don't create extra files
 "set nobackup
 "set nowritebackup
@@ -48,31 +45,7 @@ map <leader>f :FuzzyFinderFile<CR>
 map <leader>p :FuzzyFinderDir<CR>
 map <leader>b :FuzzyFinderBuffer<CR>
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
-
-" VCS mappings
-map <leader>vca :VCSAdd<CR>
-map <leader>vcn :VCSAnnotate<CR>
-map <leader>vcc :VCSCommit<CR>
-map <leader>vcD :VCSDelete<CR>
-map <leader>vcd :VCSDiff<CR>
-map <leader>vcg :VCSGotoOriginal<CR>
-map <leader>vcG :VCSGotoOriginal!<CR>
-map <leader>vci :VCSInfo<CR>
-map <leader>vcl :VCSLog<CR>
-map <leader>vcL :VCSLock<CR>
-map <leader>vcr :VCSReview<CR>
-map <leader>vcs :VCSStatus<CR>
-map <leader>vcu :VCSUpdate<CR>
-map <leader>vcU :VCSUnlock<CR>
-map <leader>vcv :VCSVimDiff<CR>
-map <leader>vce :CVSEdit<CR>
-map <leader>vcE :CVSEditors<CR>
-map <leader>vct :CVSUnedit<CR>
-map <leader>vcwv :CVSWatchers<CR>
-map <leader>vcwa :CVSWatchAdd<CR>
-map <leader>vcwn :CVSWatchOn<CR>
-map <leader>vcwf :CVSWatchOff<CR>
-map <leader>vcwf :CVSWatchRemove<CR>
+map <leader>c :NERDComToggleComment<CR>
 
 map <silent> <C-F10> :set spell!<CR>
 
