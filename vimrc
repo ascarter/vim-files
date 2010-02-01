@@ -45,7 +45,6 @@ map <leader>f :FufFile<CR>
 map <leader>p :FufDir<CR>
 map <leader>b :FufBuffer<CR>
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
-map <leader>c <plug>NERDCommenterToggle 
 
 " Map Function key shortcuts
 map <silent> <F3> :FufTag<CR>
