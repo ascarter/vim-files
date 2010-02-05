@@ -28,6 +28,7 @@ autocmd FileType rdoc  set tabstop=2|set shiftwidth=2|set softtabstop=2|set expa
 autocmd FileType eruby set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
 autocmd FileType haml  set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
 autocmd FileType sass  set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
+autocmd FileType cucumber  set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
 
 set foldenable
 set foldmethod=syntax
