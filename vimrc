@@ -39,6 +39,17 @@ set foldlevel=10
 "set nowritebackup
 "set noswapfile
 
+" Status line
+set laststatus=2
+" set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+" set statusline=%<[%n]\ %f%(\#%{Tlist_Get_Tagname_By_Line()}%)\ %h%m%r\ %y%=%-14.(%l,%c%V%)\ %P
+set statusline=%<[%n]\ %f\ %h%m%r\ %y%=%-14.(%l,%c%V%)\ %P
+set titlestring=%([%n]\ %)%f%(\ %M%)%(\ %a%)
+
+" Taglist
+let Tlist_Process_File_Always=1
+let Tlist_Show_Menu=1
+
 " Mappings
 let mapleader = "\\"
 map <leader>t :FufTag<CR>
@@ -46,11 +57,13 @@ map <leader>f :FufFile<CR>
 map <leader>p :FufDir<CR>
 map <leader>b :FufBuffer<CR>
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+map <leader>y :TlistToggle<CR>
 
 " Map Function key shortcuts
 map <silent> <F3> :FufTag<CR>
 map <silent> <S-F3> :FufFile<CR>
 map <silent> <M-F3> :FufBuffer<CR>
+map <silent> <F4> :TlistToggle<CR>
 ""map <silent> <F5> :RunMake?
 
 map <silent> <C-F7> :set spell!<CR>
