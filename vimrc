@@ -44,7 +44,8 @@ set laststatus=2
 " set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 " set statusline=%<[%n]\ %f%(\#%{Tlist_Get_Tagname_By_Line()}%)\ %h%m%r\ %y%=%-14.(%l,%c%V%)\ %P
 set statusline=%<[%n]\ %f\ %h%m%r\ %y%=%-14.(%l,%c%V%)\ %P
-set titlestring=%([%n]\ %)%f%(\ %M%)%(\ %a%)
+"set titlestring=%([%n]\ %)%f%(\ %M%)%(\ (%{expand(\"%:~:.:h\")})%)%(\ %a%)
+set titlestring=%([%n]\ %)%t%(\ %M%)%(\ (%{expand(\"%:~:.:h\")})%)%(\ %a%)
 
 " Taglist
 let Tlist_Process_File_Always=1
