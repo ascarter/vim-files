@@ -1,3 +1,6 @@
+Reload help:
+:helptags ~/.vim/doc
+
 Plugins:
 
 rails.vim
