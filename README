@@ -49,7 +49,7 @@ vim-pathogen
 http://github.com/tpope/vim-pathogen
 http://www.vim.org/scripts/script.php?script_id=2332
 
-vim-fugitive
+vim-fugitive 1.1
 http://github.com/tpope/vim-fugitive
 
 gist
