@@ -18,7 +18,7 @@ if has("gui_gtk2")
   " set guioptions=egmrLT
 elseif has("gui_macvim")
   " let macvim_hig_shift_movement = 1
-  set guifont=Menlo:h11
+  set guifont=Menlo:h12
   " set guioptions=egmrLt
   set guioptions-=T
   set transparency=0
