@@ -9,7 +9,11 @@ colorscheme github
 set background=light
 
 " Set standard starting window size
-set lines=24 columns=80
+if &diff
+	set lines=24 columns=160
+else
+	set lines=24 columns=80
+endif
 
 if has("gui_gtk2")
   " runtime mswin.vim
