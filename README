@@ -52,3 +52,7 @@ http://www.vim.org/scripts/script.php?script_id=2332
 vim-fugitive
 http://github.com/tpope/vim-fugitive
 
+gist
+http://www.vim.org/scripts/script.php?script_id=2423
+http://github.com/mattn/gist-vim
+
