@@ -52,6 +52,9 @@ set titlestring=%t%(\ -\ %{expand(\"%:~:.:h\")}%)%(\ [%n]%)%(\ %M%)%(\ %a%)
 let Tlist_Process_File_Always=1
 let Tlist_Show_Menu=1
 
+" Invisible character symbols (match textmate)
+set listchars=tab:▸\ ,eol:¬
+
 " Mappings
 let mapleader = "\\"
 map <leader>t :FufTag<CR>
@@ -60,6 +63,7 @@ map <leader>p :FufDir<CR>
 map <leader>b :FufBuffer<CR>
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 map <leader>y :TlistToggle<CR>
+map <leader>l :set list!<CR>
 
 " Map Function key shortcuts
 map <silent> <F3> :FufTag<CR>
