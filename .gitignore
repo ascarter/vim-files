@@ -1,1 +1,6 @@
 .netrwhist
+.VimballRecord
+ruby/command-t/Makefile
+ruby/command-t/mkmf.log
+ruby/command-t/ext.bundle
+ruby/command-t/*.o

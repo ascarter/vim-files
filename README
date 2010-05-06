@@ -62,4 +62,7 @@ git://github.com/tpope/vim-markdown.git
 
 vimball version 30
 http://www.vim.org/scripts/script.php?script_id=1502
+--> cd .vim/ruby/command-t
+--> ruby extconf.rb
+--> make
 

@@ -57,10 +57,6 @@ set listchars=tab:▸\ ,eol:¬
 
 " Mappings
 let mapleader = "\\"
-map <leader>t :FufTag<CR>
-map <leader>f :FufFile<CR>
-map <leader>p :FufDir<CR>
-map <leader>b :FufBuffer<CR>
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 map <leader>y :TlistToggle<CR>
 map <leader>l :set list!<CR>
