@@ -14,10 +14,6 @@ http://github.com/vim-ruby/vim-ruby
 a.vim
 http://www.vim.org/scripts/script.php?script_id=31
 
-FuzzyFinder
-http://www.vim.org/scripts/script.php?script_id=1984
-https://bitbucket.org/ns9tks/vim-fuzzyfinder/
-
 matchit
 http://www.vim.org/scripts/script.php?script_id=39
 
@@ -65,4 +61,8 @@ http://www.vim.org/scripts/script.php?script_id=1502
 --> cd .vim/ruby/command-t
 --> ruby extconf.rb
 --> make
+
+bufexplorer
+7.2.7
+http://www.vim.org/scripts/script.php?script_id=42
 
