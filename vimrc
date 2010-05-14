@@ -73,15 +73,4 @@ map <silent> <C-F10> :execute 'NERDTreeToggle ' . getcwd()<CR>
 
 runtime ftplugin/man.vim
 
-"colorscheme zenburn
-"set background=dark
-"let g:zenburn_high_Contrast = 1
-"let g:zenburn_alternate_Visual = 1
-
-"colorscheme macdev
-"set background=dark
-
 colorscheme github
-set background=light
-
-"set t_Co=256
