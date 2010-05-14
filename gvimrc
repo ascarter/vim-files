@@ -1,12 +1,4 @@
-"colorscheme macdev
-"set background=light
-
-"colorscheme zenburn
-"hi normal guibg=black
-"set background=dark
-
 colorscheme github
-set background=light
 
 " Set standard starting window size
 if &diff

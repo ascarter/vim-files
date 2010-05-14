@@ -77,5 +77,3 @@ map <silent> <C-F10> :execute 'NERDTreeToggle ' . getcwd()<CR>
 runtime ftplugin/man.vim
 
 colorscheme github
-
-"set t_Co=256
