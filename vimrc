@@ -13,6 +13,9 @@ set incsearch
 set showtabline=1
 set ruler
 
+" Turn off blinking cursor
+set guicursor+=a:blinkon0 
+
 "set expandtab
 "set softtabstop=2
 set smarttab
@@ -73,15 +76,6 @@ map <silent> <C-F10> :execute 'NERDTreeToggle ' . getcwd()<CR>
 
 runtime ftplugin/man.vim
 
-"colorscheme zenburn
-"set background=dark
-"let g:zenburn_high_Contrast = 1
-"let g:zenburn_alternate_Visual = 1
-
-"colorscheme macdev
-"set background=dark
-
 colorscheme github
-set background=light
 
 "set t_Co=256
