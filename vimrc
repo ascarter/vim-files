@@ -10,11 +10,13 @@ set number
 set cursorline
 set hlsearch
 set incsearch
+set ignorecase
+set scs
 set showtabline=1
 set ruler
 
 " Turn off blinking cursor
-set guicursor+=a:blinkon0 
+set guicursor+=n:blinkon0 
 
 "set expandtab
 "set softtabstop=2
@@ -73,6 +75,9 @@ map <silent> <F4> :TlistToggle<CR>
 
 map <silent> <C-F7> :set spell!<CR>
 map <silent> <C-F10> :execute 'NERDTreeToggle ' . getcwd()<CR>
+
+" Disable currently highlighted search term
+" nmap <silent> <C-n> :nohlsearch<CR>
 
 runtime ftplugin/man.vim
 
