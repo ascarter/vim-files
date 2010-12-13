@@ -1,0 +1,33 @@
+[submodule "bundle/vim-rails"]
+	path = bundle/vim-rails
+	url = http://github.com/tpope/vim-rails.git
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = http://github.com/vim-ruby/vim-ruby.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = http://github.com/scrooloose/nerdtree.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = http://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/vim-endwise"]
+	path = bundle/vim-endwise
+	url = http://github.com/tpope/vim-endwise.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = http://github.com/msanders/snipmate.vim.git
+[submodule "taglist"]
+	path = taglist
+	url = http://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = http://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/zenesque"]
+	path = bundle/zenesque
+	url = http://github.com/vim-scripts/zenesque.vim.git
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = http://github.com/tpope/vim-fugitive.git
+[submodule "vim-pathogen"]
+	path = vim-pathogen
+	url = http://github.com/tpope/vim-pathogen.git

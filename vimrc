@@ -1,5 +1,10 @@
 set nocompatible
 
+" Initialize pathogen
+filetype off
+call pathogen#helptags()
+call pathogen#runtime_append_all_bundles()
+
 syntax enable
 filetype on
 filetype plugin on
@@ -28,12 +33,13 @@ set backspace=start,eol,indent whichwrap+=<,>,[,]
 " Use system clipboard
 " set clipboard=unnamed
 
-autocmd FileType ruby  set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
-autocmd FileType rdoc  set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
-autocmd FileType eruby set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
-autocmd FileType haml  set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
-autocmd FileType sass  set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
-autocmd FileType cucumber  set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
+autocmd FileType javascript set tabstop=4|set shiftwidth=4|set softtabstop=4|set expandtab
+autocmd FileType ruby       set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
+autocmd FileType rdoc       set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
+autocmd FileType eruby      set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
+autocmd FileType haml       set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
+autocmd FileType sass       set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
+autocmd FileType cucumber   set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
 
 set foldenable
 set foldmethod=syntax
