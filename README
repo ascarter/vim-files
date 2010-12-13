@@ -36,6 +36,10 @@ http://www.vim.org/scripts/script.php?script_id=2332
 vim-fugitive 1.1
 http://github.com/tpope/vim-fugitive
 
+vim-markdown
+http://github.com/tpope/vim-markdown
+git://github.com/tpope/vim-markdown.git
+
 =====
 
 a.vim
@@ -60,10 +64,6 @@ http://github.com/tpope/vim-cucumber
 gist
 http://www.vim.org/scripts/script.php?script_id=2423
 http://github.com/mattn/gist-vim
-
-vim-markdown
-http://github.com/tpope/vim-markdown
-git://github.com/tpope/vim-markdown.git
 
 vimball version 30
 http://www.vim.org/scripts/script.php?script_id=1502
