@@ -40,6 +40,13 @@ vim-markdown
 http://github.com/tpope/vim-markdown
 git://github.com/tpope/vim-markdown.git
 
+vim-git
+http://github.com/tpope/vim-git
+git://github.com/tpope/vim-git.git
+
+vim-surround
+http://github.com/tpope/vim-surround
+
 =====
 
 a.vim
@@ -54,9 +61,6 @@ http://github.com/tpope/vim-surround
 
 vim-haml
 http://github.com/tpope/vim-haml
-
-vim-git
-git://github.com/tpope/vim-git.git
 
 vim-cucumber
 http://github.com/tpope/vim-cucumber
