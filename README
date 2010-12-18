@@ -47,6 +47,10 @@ git://github.com/tpope/vim-git.git
 vim-surround
 http://github.com/tpope/vim-surround
 
+command-t
+https://wincent.com/products/command-t
+git://git.wincent.com/command-t.git bundle/command-t
+
 =====
 
 a.vim
