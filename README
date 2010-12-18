@@ -51,6 +51,9 @@ command-t
 https://wincent.com/products/command-t
 git://git.wincent.com/command-t.git bundle/command-t
 
+tracwiki 0.4:
+http://www.vim.org/scripts/script.php?script_id=3337
+
 =====
 
 a.vim
@@ -86,5 +89,3 @@ http://www.vim.org/scripts/script.php?script_id=42
 scratch.vim 1.0
 http://www.vim.org/scripts/script.php?script_id=664
 
-tracwiki 0.4:
-http://www.vim.org/scripts/script.php?script_id=3337
