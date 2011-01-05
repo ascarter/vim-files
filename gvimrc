@@ -21,7 +21,8 @@ elseif has("gui_macvim")
   au FocusLost * set transp=5
   au FocusGained * set transp=0
 elseif has("gui_win32")
-  set guifont=Consolas:h12,Lucida\ Console:h12
+  set guifont=Consolas:h11,Lucida\ Console:h12
+  set guioptions-=T
 endif
 
 " Mappings

@@ -63,8 +63,10 @@ set titlestring=%t%(\ -\ %{expand(\"%:~:.:h\")}%)%(\ [%n]%)%(\ %M%)%(\ %a%)
 let Tlist_Process_File_Always=1
 let Tlist_Show_Menu=1
 
-" Invisible character symbols (match textmate)
-set listchars=tab:▸\ ,eol:¬
+if has("unix")
+  " Invisible character symbols (match textmate)
+  set listchars=tab:▸\ ,eol:¬
+endif
 
 " Mappings
 let mapleader = "\\"
