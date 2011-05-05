@@ -69,8 +69,6 @@ git://git.wincent.com/command-t.git bundle/command-t
 tracwiki 0.4:
 http://www.vim.org/scripts/script.php?script_id=3337
 
-=====
-
 a.vim
 http://www.vim.org/scripts/script.php?script_id=31
 
@@ -107,3 +105,5 @@ http://www.vim.org/scripts/script.php?script_id=664
 vim-colors-solarized
 git://github.com/altercation/vim-colors-solarized.git
 
+vim-javascript
+https://github.com/pangloss/vim-javascript.git
