@@ -89,4 +89,12 @@ map <silent> <C-F10> :execute 'NERDTreeToggle ' . getcwd()<CR>
 
 runtime ftplugin/man.vim
 
+if has('gui_running')
+  set background=light
+else
+  set background=dark
+endif
+
 colorscheme github
+" colorscheme solarized
+

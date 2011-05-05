@@ -1,5 +1,3 @@
-colorscheme github
-
 " Set standard starting window size
 if &diff
 	set lines=24 columns=160
