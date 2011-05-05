@@ -1,3 +1,18 @@
+Setup:
+cd ~
+git clone http://github.com/ascarter/vim-files.git ~/.vim
+ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.vim/gvimrc ~/.gvimrc
+cd ~/.vim
+git submodule init
+git submodule update
+
+Add plugin:
+cd ~/.vim
+git submodule add path/to/git bundle/name
+git add .
+git commit -m "Install x.vim bundle as submodule"
+
 Reload help:
 :helptags ~/.vim/doc
 
@@ -88,4 +103,7 @@ http://www.vim.org/scripts/script.php?script_id=42
 
 scratch.vim 1.0
 http://www.vim.org/scripts/script.php?script_id=664
+
+vim-colors-solarized
+git://github.com/altercation/vim-colors-solarized.git
 
