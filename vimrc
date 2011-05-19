@@ -2,33 +2,44 @@ set nocompatible
 
 " Initialize pathogen
 filetype off
-call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+set encoding=utf-8
 
 syntax enable
 filetype on
 filetype plugin on
 filetype indent on
 
+" Whitespace
 " set nowrap
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set listchars=tab:\ \ ,trail:·
+set nolist
+set expandtab
+set smarttab
+set smartindent
+set autoindent
+set backspace=start,eol,indent whichwrap+=<,>,[,]
+
 set number
 set cursorline
+
+" Searching
 set hlsearch
 set incsearch
 set ignorecase
+set smartcase
+
 set scs
 set showtabline=1
 set ruler
 
 " Turn off blinking cursor
 set guicursor+=n:blinkon0 
-
-"set expandtab
-"set softtabstop=2
-set smarttab
-set smartindent
-set autoindent
-set backspace=start,eol,indent whichwrap+=<,>,[,]
 
 " Use system clipboard
 " set clipboard=unnamed
@@ -40,6 +51,10 @@ autocmd FileType eruby      set tabstop=2|set shiftwidth=2|set softtabstop=2|set
 autocmd FileType haml       set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
 autocmd FileType sass       set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
 autocmd FileType cucumber   set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
+autocmd FileType python     set tabstop=4|set shiftwidth=4|set softtabstop=4|set expandtab|textwidth=79
+autocmd FileType make       set noexpandtab
+autocmd FileType markdown   set wrap|set wrapmargin=2|set textwidth=72|map <buffer> <Leader>p :Hammer<CR>
+autocmd BufNewFile,BufRead *.json set ft=javascript
 
 set foldenable
 set foldmethod=syntax
@@ -70,14 +85,15 @@ endif
 
 " Mappings
 let mapleader = "\\"
-map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+
+" CTags
+map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
+map <C-\> :tnext<CR>
+
 map <leader>y :TlistToggle<CR>
 map <leader>l :set list!<CR>
 
 " Map Function key shortcuts
-map <silent> <F3> :FufTag<CR>
-map <silent> <S-F3> :FufFile<CR>
-map <silent> <M-F3> :FufBuffer<CR>
 map <silent> <F4> :TlistToggle<CR>
 ""map <silent> <F5> :RunMake?
 
@@ -87,8 +103,6 @@ map <silent> <C-F10> :execute 'NERDTreeToggle ' . getcwd()<CR>
 " Disable currently highlighted search term
 " nmap <silent> <C-n> :nohlsearch<CR>
 
-runtime ftplugin/man.vim
-
 if has('gui_running')
   set background=light
 else
@@ -97,4 +111,21 @@ endif
 
 colorscheme github
 " colorscheme solarized
+
+" NERDTree
+let NERDChristmasTree=1
+let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
+map <leader>n :execute 'NERDTreeToggle ' . getcwd()<CR>
+
+" MacVIM shift+arrow keys behavior
+if has("gui_macvim")
+  let macvim_hig_shift_movement = 1
+endif
+
+" % to bound from do to end
+runtime! macros/matchit.vim
+
+" Startup with NERDTree open and cursor in buffer
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
 
