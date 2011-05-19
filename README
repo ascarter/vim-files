@@ -1,22 +1,45 @@
-Setup:
-cd ~
-git clone git@github.com:ascarter/vim-files.git .vim
-ln -s ~/.vim/vimrc ~/.vimrc
-ln -s ~/.vim/gvimrc ~/.gvimrc
-cd ~/.vim
-git submodule init
-git submodule update
+# Setup
 
-Add plugin:
-cd ~/.vim
-git submodule add path/to/git bundle/name
-git add .
-git commit -m "Install x.vim bundle as submodule"
+  cd ~
+  git clone git@github.com:ascarter/vim-files.git .vim
+  ln -s ~/.vim/vimrc ~/.vimrc
+  ln -s ~/.vim/gvimrc ~/.gvimrc
+  cd ~/.vim
+  git submodule init
+  git submodule update
 
-Reload help:
-:helptags ~/.vim/doc
+# Add plugin
 
-Plugins:
+  cd ~/.vim
+  git submodule add path/to/git bundle/name
+  git add .
+  git commit -m "Install x.vim bundle as submodule"
+
+To ignore any generated files (i.e. helptags), add following to the `.gitsubmodules` file:
+
+  [submodule "bundle/fugitive"]
+    path = bundle/fugitive
+    url = git://github.com/tpope/vim-fugitive.git
+    ignore = dirty
+
+# Upgrade plugin bundle
+
+  cd ~/.vim
+  git submodule update
+
+# Remove submodule
+
+* Remove references in `.gitmodules` and `.git/config`
+* Remove bundle
+
+  git rm --cached ~/.vim/bundle/bundle-name
+
+# Reload help:
+
+  :helptags ~/.vim/doc
+
+
+# Plugins:
 
 NERD_tree.vim
 http://github.com/scrooloose/nerdtree.git bundle/nerdtree
