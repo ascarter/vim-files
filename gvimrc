@@ -1,8 +1,9 @@
 " Set standard starting window size
 if &diff
-  set lines=24 columns=160
+  set lines=40 columns=160
 else
-  set lines=24 columns=80
+  " NERDTree == 20 + 80 for code
+  set lines=40 columns=100
 endif
 
 if has("gui_gtk2")

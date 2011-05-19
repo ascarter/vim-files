@@ -27,6 +27,7 @@ set backspace=start,eol,indent whichwrap+=<,>,[,]
 
 set number
 set cursorline
+set modeline
 
 " Searching
 set hlsearch
@@ -44,16 +45,16 @@ set guicursor+=n:blinkon0
 " Use system clipboard
 " set clipboard=unnamed
 
-autocmd FileType javascript set tabstop=4|set shiftwidth=4|set softtabstop=4|set expandtab
-autocmd FileType ruby       set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
-autocmd FileType rdoc       set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
-autocmd FileType eruby      set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
-autocmd FileType haml       set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
-autocmd FileType sass       set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
-autocmd FileType cucumber   set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
-autocmd FileType python     set tabstop=4|set shiftwidth=4|set softtabstop=4|set expandtab|textwidth=79
+autocmd FileType javascript set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType ruby       set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType rdoc       set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType eruby      set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType haml       set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType sass       set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType cucumber   set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType python     set tabstop=4 shiftwidth=4 softtabstop=4 expandtab textwidth=79 cinwords=if,elif,else,for,while,with,try,except,finally,def,class
 autocmd FileType make       set noexpandtab
-autocmd FileType markdown   set wrap|set wrapmargin=2|set textwidth=72|map <buffer> <Leader>p :Hammer<CR>
+autocmd FileType markdown   set wrap wrapmargin=2 textwidth=72|map <buffer> <Leader>p :Hammer<CR>
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
 set foldenable
