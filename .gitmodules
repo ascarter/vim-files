@@ -55,3 +55,6 @@
 [submodule "bundle/vim-rooter"]
 	path = bundle/vim-rooter
 	url = https://github.com/airblade/vim-rooter.git
+[submodule "bundle/hammer"]
+	path = bundle/hammer
+	url = https://github.com/robgleeson/hammer.vim.git
