@@ -74,3 +74,7 @@
 	path = bundle/hammer
 	url = https://github.com/robgleeson/hammer.vim.git
   ignore = dirty
+[submodule "bundle/python"]
+	path = bundle/python
+  url = https://github.com/vim-scripts/python.vim--Vasiliev.git
+  ignore = dirty
